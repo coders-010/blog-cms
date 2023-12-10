@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/index', [BlogController::class, 'index'] )->name('blog.index');
-Route::get('/student-info/form', [BlogController::class, 'loginForm'] )->name('blog.loginForm');
-Route::get('/student-info/register', [BlogController::class, 'register'] )->name('blog.register');
+Route::get('/blog/login', [BlogController::class, 'loginForm'] )->name('blog.loginForm');
+Route::get('/blog/register', [BlogController::class, 'register'] )->name('blog.register');
 Route::post('/blog/register', [BlogController::class, 'registerStore'] )->name('blog.registerStore');
 Route::post('/blog/login', [BlogController::class, 'login'] )->name('blog.login');
