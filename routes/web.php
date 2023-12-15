@@ -17,8 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/index', [BlogController::class, 'index'] )->name('blog.index');
+Route::get('/blog-cms', [BlogController::class, 'index'] )->name('blog.index');
 Route::get('/blog/login', [BlogController::class, 'loginForm'] )->name('blog.loginForm');
 Route::get('/blog/register', [BlogController::class, 'register'] )->name('blog.register');
 Route::post('/blog/register', [BlogController::class, 'registerStore'] )->name('blog.registerStore');
 Route::post('/blog/login', [BlogController::class, 'login'] )->name('blog.login');
+
+
