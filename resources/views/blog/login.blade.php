@@ -12,6 +12,30 @@
 </head>
 
 <body>
+     <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+        <a class="navbar-brand" href="/">Blog CMS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ route('blog.index') }}">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Categories & Tags</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="{{ route('blog.register') }}">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <section class="vh-100" style="background-color: #eee;">
         <div class="container h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">

@@ -18,17 +18,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-primary" href="{{ route('blog.index') }}">Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/articles">Articles</a>
+                    <a class="nav-link" href="">Articles</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/categories & tags">Categories & Tags</a>
+                    <a class="nav-link" href="">Categories & Tags</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/profile">Profile</a>
-                </li>
+               
                 <li class="nav-item">
                     <a class="nav-link text-info" href="{{ route('blog.loginForm') }}">Login</a>
                 </li>
